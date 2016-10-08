@@ -1,10 +1,17 @@
 <div flex layout="row" layout-align="center center" ng-controller="mainController as main">
     <div flex-offset="40" flex="50"flex-sm="100" flex-gt-sm="90" flex-gt-md="70" flex-gt-lg="50">
+	    <br/>Address : <input ng-model="main.address" ng-model-options="{ debounce: 800 }"/>
         <md-content>
             <ng-map zoom="11" center="{{main.address}}" style="width:600px; height:400px">
               <marker position="{{main.address}}" title="{{address}}"></marker>
+          <directions
+            draggable="false"
+            travel-mode="DRIVING"
+            origin="{{main.address}}"
+            destination="connaught place">
+          </directions>
             </ng-map>
-          <br/>Address : <input ng-model="main.address" ng-model-options="{ debounce: 800 }"/>
+          
 
 			
         </md-content>			

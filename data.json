@@ -1,0 +1,203 @@
+
+[
+  {
+    "name": "Hotel 1",
+	"description": "BLah at its best",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.241086,
+      28.641167
+    ]
+  },
+  {
+    "name": "Hotel 2",
+	"description": "YOLO 2",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.224965,
+      28.661923
+    ]
+  },
+   {
+    "name": "Hotel 3",
+	"description": "Yakana",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.232123,
+      28.65645
+    ]
+  },
+   {
+    "name": "Hotel 4",
+	"description": "Yulaw 4",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.238705,
+      28.655838
+    ]
+  },
+   {
+    "name": "Hotel 5",
+	"description": "YOLO 5",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.224708,
+      28.642701
+    ]
+  },
+   {
+    "name": "Hotel 6",
+	"description": "YOLO 6",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.232993,
+      28.641784
+    ]
+  },
+   {
+    "name": "Hotel 7",
+	"description": "YOLO 7",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.209021,
+      28.613939
+    ]
+  },
+   {
+    "name": "Hotel 8",
+	"description": "YOLO 8",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.22866,
+      28.64272
+    ]
+  },
+   {
+    "name": "Hotel 9",
+	"description": "YOLO 9",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.219678,
+      28.644371
+    ]
+  },
+   {
+    "name": "Hotel 10",
+	"description": "YOLO 10",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.233442,
+      28.650679
+    ]
+  },
+   {
+    "name": "Hotel 11",
+	"description": "YOLO 11",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.241234,
+      28.649294
+    ]
+  },
+  {
+    "name": "Hotel 12",
+	"description": "YOLO 12",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.234601,
+      28.651621
+    ]
+  },
+  {
+    "name": "Hotel 13",
+	"description": "YOLO 13",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.223371,
+      28.51863
+    ]
+  },
+  {
+    "name": "Hotel 14",
+	"description": "YOLO 14",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.257217,
+      28.526819
+    ]
+  },
+  {
+    "name": "Hotel 15",
+	"description": "YOLO 15",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.263863,
+      28.577961
+    ]
+  },
+  {
+    "name": "Hotel 16",
+	"description": "YOLO 16",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.260562,
+      28.59061
+    ]
+  },
+  {
+    "name": "Hotel 17",
+	"description": "YOLO 17",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.265902,
+      28.554996
+    ]
+  },
+  {
+    "name": "Hotel 18",
+	"description": "YOLO 18",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.304342,
+      28.489972
+    ]
+  },
+  {
+    "name": "Hotel 19",
+	"description": "YOLO 19",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.249595,
+      28.548275
+    ]
+  },
+  {
+    "name": "Hotel 20",
+	"description": "YOLO 20",
+	"phone":"",
+	"email":"",
+    "loc": [
+      77.245335,
+      28.562883
+    ]
+  }
+]
