@@ -15,7 +15,7 @@
 		  Email: {{location.email}}</span>
 		  </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
-          <md-button ui-sref="differentlyabled">Book</md-button>
+          <md-button ui-sref="differentlyabled" ng-click="destination(location.loc);findid(location._id)">Book</md-button>
 		  Votes: {{location.votes}}
         </md-card-actions>
    </md-card>

@@ -5,14 +5,14 @@ var Schema = mongoose.Schema;
 
 var LocationModel = function() {
   var LocationSchema = new Schema({
-    name: String,
-	description: String,
-	phone: Number,
+    description: String,
 	email: String,
     loc: {
       type: [Number],   // format will be [ <longitude> , <latitude> ]
       index: '2d'       // create the geospatial index
     },
+	name: String,
+	phone: Number,
 	votes: Number
   });
 

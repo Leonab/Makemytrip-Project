@@ -23,6 +23,26 @@ app.get('/api/locations', function(req, res) {
         // use mongoose to get all locations in the database
         getLocation(res);
     });
+	
+	
+	
+	
+
+app.post('/api/locations2/', function(req, res) {
+
+    console.log("yolo",req.body);
+	
+    Location.update({_id: req.body._id}, {votes: req.body.votes}, function(err, values) {
+        if (!err) {
+            res.json(values);
+        } else {
+            res.write("fail");
+        }
+    });
+
+    });	
+	
+
 
 
 

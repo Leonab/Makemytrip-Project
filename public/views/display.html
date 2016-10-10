@@ -1,13 +1,12 @@
-<div flex layout="row" layout-align="center center" ng-controller="mainController as main">
+<div flex layout="row" layout-align="center" ng-controller="mainController as main">
     <div flex-offset="40" flex="50"flex-sm="100" flex-gt-sm="90" flex-gt-md="70" flex-gt-lg="50">
         <md-content>
             <ng-map zoom="11" center="{{address}}" style="width:600px; height:400px">
-              <marker position="{{address}}" title="{{address}}"></marker>
           <directions
             draggable="false"
             travel-mode="DRIVING"
             origin="{{address}}"
-            destination="connaught place">
+            destination="{{finalAddress}}">
           </directions>
             </ng-map>
           
@@ -15,6 +14,10 @@
 			
         </md-content>			
     </div>
+	<div flex="20">
+	 <md-button ng-click="upvote()">
+	    Would you rate the place condusive ?
+	 </md-button>
 </div>
 
 

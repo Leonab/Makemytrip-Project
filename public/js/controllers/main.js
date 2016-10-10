@@ -30,6 +30,36 @@ angular.module('locationController', ['ui.router'])
 
 	};
 	
+	
+	$scope.destination = function(req,res){
+		var coords = [];
+		coords=req;
+		var temp = coords[0];
+		coords[0]=coords[1];
+		coords[1]=temp;
+		console.log(req);
+		$scope.finalAddress = coords;
+	};
+	
+	$scope.findid = function(req,res){
+		$scope.id = req;
+	}
+	
+	$scope.upvote = function(){
+		for(var i=0;i<$scope.locations.length;i++)
+		{
+			if($scope.locations[i]._id==$scope.id)
+			{
+				$scope.total = $scope.locations[i].votes++;
+				console.log($scope.total);
+				Locations.addVote(JSON.stringify($scope.locations[i]))
+				.success(function(){
+					console.log("success");
+				});
+				break;
+			}
+		}
+	}
    
 	}])
 	

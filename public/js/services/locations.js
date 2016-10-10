@@ -5,8 +5,9 @@ angular.module('locationService', [])
 			get : function() {
 				return $http.get('/api/locations');
 			},
-			create : function(locationData) {
-				return $http.post('/api/locations', locationData);
+			addVote : function(locations) {
+				console.log(locations);
+				return $http.post('/api/locations2/', locations,{headers: {'Content-Type': 'application/json'} });
 			},
 			delete : function(id) {
 				return $http.delete('/api/locations/' + id);
