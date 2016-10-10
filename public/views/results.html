@@ -1,0 +1,26 @@
+<div flex layout="row" layout-align="center">
+  <div flex-offset="20" flex="60" class="md-padding">
+  
+  <div ng-repeat="location in locations">
+  <md-card class="md-padding">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">{{location.name}}</span><br>
+            <span class="md-subhead">{{location.description}}</span>
+          </md-card-title-text>
+
+        </md-card-title>
+		<md-card-content>
+          Phone: {{location.phone}}</span><br>
+		  Email: {{location.email}}</span>
+		  </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button ui-sref="differentlyabled">Book</md-button>
+		  Votes: {{location.votes}}
+        </md-card-actions>
+   </md-card>
+   <br>
+  
+  </div>
+  </div>
+</div>

@@ -12,7 +12,8 @@ var LocationModel = function() {
     loc: {
       type: [Number],   // format will be [ <longitude> , <latitude> ]
       index: '2d'       // create the geospatial index
-    }
+    },
+	votes: Number
   });
 
 

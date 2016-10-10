@@ -15,18 +15,6 @@ function getLocation(res){
 		});
 };
 
-//finds the last entry in the database
-function getUser(res){
-	User.findOne().sort({created_at: -1}).exec(function(err, docs) {
-
-			// if there is an error retrieving, send the error. nothing after res.send(err) will execute
-			if (err)
-				return res.send(err);
-			
-            console.log(docs);
-			return res.json(docs); // return all locations in JSON format
-		});
-};
 
 module.exports = function(app) {
 	
@@ -35,64 +23,8 @@ app.get('/api/locations', function(req, res) {
         // use mongoose to get all locations in the database
         getLocation(res);
     });
-	
-	
-app.get('/api/lastuser', function(req, res) {
 
-        // use mongoose to get all locations in the database
-        getUser(res);
-    });
-	
-	
-app.post('/api/locations/', function(req, res) {
 
-        // create, information comes from AJAX request from Angular
-        Location.create({
-            text : req.body.text,
-            done : false
-        }, function(err, locations) {
-            if (err)
-                res.send(err);
-
-            // get and return all the locations after you create another
-            getLocation(res);
-        });
-
-    });
-	
-app.post('/api/users', function(req, res) {
-
-		
-		var name = req.body.name,
-			address = req.body.address,
-			email= req.body.email,
-			phone= req.body.phone,
-			perishable= req.body.perishable || true,
-			pick= req.body.pick || false;
-		
-		var user = new User({name : name, address : address, email: email, phone: phone, perishable: perishable, pick: pick});
-		// create, information comes from AJAX request from Angular
-		user.save(function(err) {
-            if (err)
-                res.send(err);
-            return;
-
-        });
-
-    });
-
-	
-app.delete('/api/locations/:location_id', function(req, res) {
-        Location.remove({
-            _id : req.params.location_id
-        }, function(err, locations) {
-            if (err)
-                res.send(err);
-
-            // get and return all the locations after you create another
-            getLocation(res);
-        });
-    });
 
 app.get('/api/query', function(req, res, next){
     
@@ -121,21 +53,12 @@ app.get('/api/query', function(req, res, next){
         if (err) {
         return res.send(500, err);
         }
+		console.log(locations);
        return res.json(200, locations);
     });
 		
    });
    
-   
-   //===================================
-   
-   app.post('/contact-form',function(req, res){
-	   core.sendMail(req, res);
-   });
-   
-   app.post('/SMS',function(req,res){
-	   sms.call(req,res);
-   });
    
    
    
