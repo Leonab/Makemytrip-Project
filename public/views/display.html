@@ -15,7 +15,7 @@
         </md-content>			
     </div>
 	<div flex="20">
-	 <md-button ng-click="upvote()">
+	 <md-button ng-disabled="disabled" class="md-raised md-primary" ng-click="upvote();toggle()">
 	    Would you rate the place condusive ?
 	 </md-button>
 </div>

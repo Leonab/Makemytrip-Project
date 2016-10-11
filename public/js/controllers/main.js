@@ -45,6 +45,11 @@ angular.module('locationController', ['ui.router'])
 		$scope.id = req;
 	}
 	
+	$scope.toggle = function(){
+		$scope.disabled = true;
+	}
+	
+	
 	$scope.upvote = function(){
 		for(var i=0;i<$scope.locations.length;i++)
 		{
@@ -59,6 +64,7 @@ angular.module('locationController', ['ui.router'])
 				break;
 			}
 		}
+		return true;
 	}
    
 	}])
