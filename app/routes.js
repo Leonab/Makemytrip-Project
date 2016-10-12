@@ -32,6 +32,7 @@ app.post('/api/locations2/', function(req, res) {
 
     console.log("yolo",req.body);
 	
+	//Update the votes in the db via mongoose
     Location.update({_id: req.body._id}, {votes: req.body.votes}, function(err, values) {
         if (!err) {
             res.json(values);
