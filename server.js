@@ -10,7 +10,7 @@ var fs = require('fs');
 var path = require('path');
 var methodOverride = require('method-override');
 
-mongoose.connect('mongodb://localhost/hindsight'), function(err) {
+mongoose.connect('mongodb://leonab:helloworld@ds057816.mlab.com:57816/hindsight'), function(err) {
   if (err) throw err;
 };
 
