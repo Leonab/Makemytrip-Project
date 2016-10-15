@@ -1,6 +1,6 @@
 <div flex layout="row" layout-align="center" ng-controller="mainController as main">
     <div flex-offset="40" flex="50" flex-sm="100" flex-gt-sm="90" flex-gt-md="70" flex-gt-lg="50">
-        <md-content>
+
             <ng-map zoom="11" center="{{address}}" style="width:600px; height:400px">
           <directions
             draggable="false"
@@ -9,13 +9,12 @@
             destination="{{finalAddress}}">
           </directions>
             </ng-map>
-          </md-content>			
-    </div>
-	<div flex="20">
-	 <md-button ng-disabled="disabled" class="md-raised md-primary" ng-click="upvote();toggle()">
+			
+	<md-button ng-disabled="disabled" class="md-raised md-primary" ng-click="upvote();toggle()">
 	    Would you rate the place condusive ?
 	 </md-button>
-</div>
+		
+    </div>
 
 
   <!--div layout="row" layout-sm="column" layout-align="space-around" ng-if="loading" style="margin-top: 180px;" class="md-whiteframe-z5">

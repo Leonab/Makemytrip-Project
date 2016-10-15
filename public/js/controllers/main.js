@@ -1,4 +1,16 @@
-angular.module('locationController', ['ui.router'])
+angular.module('locationController', ['ui.router','ngMaterial'])
+
+
+.config(function($mdThemingProvider) {
+
+    $mdThemingProvider.theme('customTheme')
+        .primaryPalette('blue-grey')
+        .accentPalette('blue');
+
+
+})
+
+
 
 	// inject the service factory into our controller
 	.controller('mainController', ['$scope','$http','Locations','$mdToast','$animate', function($scope, $http, Locations, $mdToast, $animate) {
