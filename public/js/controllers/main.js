@@ -111,6 +111,10 @@ angular.module('locationController', ['ui.router','ngMaterial'])
             url: '/results',
             templateUrl: 'views/results.html'   
         })
+        .state('suggestions', {
+            url: '/suggestions',
+            templateUrl: 'views/d3render.html'   
+        })
 		.state('differentlyabled', {
             url: '/differentlyabled',
             templateUrl: 'views/display.html'   
