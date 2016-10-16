@@ -53,27 +53,29 @@ angular.module('d3directive',[])
                 .append("rect")
                 .attr("height", 0) // height of each bar
                 .attr("width", 30) // initial width of 0 for transition
-                .attr("y", height-10) // half of the 20 side margin specified above
+                .attr("y", height) // half of the 20 side margin specified above
                 .attr("x", function(d, i){
                   return i * 50 +22;
                 }) // height + margin between bars
                 .transition()
                   .duration(1000) // time of duration
                   .attr("y", function(d){
-                    return height-d.votes/(max/height);
+                    return (height-10)-d.votes/(max/height);
                   })
                   .attr("height", function(d){
 					  return d.votes/(max/height);
-				  });
+				  })
+				  .attr("fill", "steelblue")
 
             svg.selectAll("text")
               .data(data)
               .enter()
                 .append("text")
-                .attr("fill", "#fff")
+                .attr("fill", "#000")
                 .attr("x", function(d, i){return i * 50 + 22;})
                 .attr("y", height)
                 .text(function(d){return d[scope.label];});
+				console.log(scope);
 
           };
         }
