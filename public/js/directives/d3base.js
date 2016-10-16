@@ -61,7 +61,7 @@ angular.module('d3directive',[])
                 .transition()
                   .duration(1000) // time of duration
                   .attr("width", function(d){
-                    return d.score/(max/width);
+                    return d.votes/(max/width);
                   }); // width based on scale
 
             svg.selectAll("text")
