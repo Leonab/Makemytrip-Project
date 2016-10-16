@@ -35,9 +35,9 @@ angular.module('d3directive',[])
 
             // setup variables
             var width, height, max;
-            width = scope.data.length * 35;
+            width = d3.select(iElement[0])[0][0].offsetWidth - 20;
               // 20 is for margins and can be changed
-            height = d3.select(iElement[0])[0][0].offsetWidth - 20;
+            height = scope.data.length * 20; 
               // 35 = 30(bar height) + 5(margin between bars)
             max = 98;
               // this can also be found dynamically when the data is not static
@@ -51,26 +51,28 @@ angular.module('d3directive',[])
               .data(data)
               .enter()
                 .append("rect")
-                .on("click", function(d, i){return scope.onClick({item: d});})
                 .attr("height", 0) // height of each bar
-                .attr("width", 20) // initial width of 0 for transition
-                .attr("y", 10) // half of the 20 side margin specified above
+                .attr("width", 30) // initial width of 0 for transition
+                .attr("y", height-10) // half of the 20 side margin specified above
                 .attr("x", function(d, i){
-                  return i * 35;
+                  return i * 50 +22;
                 }) // height + margin between bars
                 .transition()
                   .duration(1000) // time of duration
+                  .attr("y", function(d){
+                    return height-d.votes/(max/height);
+                  })
                   .attr("height", function(d){
-                    return d.votes/(max/width);
-                  }); // width based on scale
+					  return d.votes/(max/height);
+				  });
 
             svg.selectAll("text")
               .data(data)
               .enter()
                 .append("text")
                 .attr("fill", "#fff")
-                .attr("x", function(d, i){return i * 35 + 22;})
-                .attr("y", 15)
+                .attr("x", function(d, i){return i * 50 + 22;})
+                .attr("y", height)
                 .text(function(d){return d[scope.label];});
 
           };
