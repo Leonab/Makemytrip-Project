@@ -75,7 +75,6 @@ angular.module('d3directive',[])
                 .attr("x", function(d, i){return i * 50 + 22;})
                 .attr("y", height)
                 .text(function(d){return d[scope.label];});
-				console.log(scope);
 
           };
         }

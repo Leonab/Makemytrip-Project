@@ -21,7 +21,7 @@
 #backg {
   min-height: 100vh;
   /*height:auto;*/
-  background-image: url(/images/middayfinal.jpg);
+  background-image: url(/images/backg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
