@@ -107,6 +107,10 @@ angular.module('locationController', ['ui.router','ngMaterial'])
             url: '/search',
             templateUrl: 'views/search.html'   
         })
+        .state('404', {
+            url: '/404',
+            templateUrl: 'views/404.html'   
+        })
         .state('results', {
             url: '/results',
             templateUrl: 'views/results.html'   
