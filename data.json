@@ -2,222 +2,222 @@
 [
   {
     "name": "Hotel 1",
-	"description": "BLah at its best",
-	"phone":"",
-	"email":"",
+	"description": "Working for the betterment of society",
+	"phone":"9876543210",
+	"email":"abc@gmail.com",
     "loc": [
       77.241086,
       28.641167
     ],
-	"votes": 0
+	"votes": 23
   },
   {
     "name": "Hotel 2",
-	"description": "YOLO 2",
-	"phone":"",
-	"email":"",
+	"description": "Hello from the other side",
+	"phone":"9876543210",
+	"email":"xyz@yahoo.com",
     "loc": [
       77.224965,
       28.661923
     ],
-	"votes": 0
+	"votes": 15
   },
    {
     "name": "Hotel 3",
-	"description": "Yakana",
-	"phone":"",
-	"email":"",
+	"description": "It pours when you're dry and seldom when you need some",
+	"phone":"9876543210",
+	"email":"sansa@hindsight.com",
     "loc": [
       77.232123,
       28.65645
     ],
-	"votes": 0
+	"votes": 33
   },
    {
     "name": "Hotel 4",
-	"description": "Yulaw 4",
-	"phone":"",
-	"email":"",
+	"description": "Working for the betterment of society; peace by piece",
+	"phone":"9876543210",
+	"email":"abc@gmail.com",
     "loc": [
       77.238705,
       28.655838
     ],
-	"votes": 0
+	"votes": 77
   },
    {
     "name": "Hotel 5",
-	"description": "YOLO 5",
-	"phone":"",
-	"email":"",
+	"description": "In this life or the next; Run",
+	"phone":"9876543210",
+	"email":"xyz@yahoo.com",
     "loc": [
       77.224708,
       28.642701
     ],
-	"votes": 0
+	"votes": 45
   },
    {
     "name": "Hotel 6",
-	"description": "YOLO 6",
-	"phone":"",
-	"email":"",
+	"description": "Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.",
+	"phone":"9876543210",
+	"email":"sansa@hindsight.com",
     "loc": [
       77.232993,
       28.641784
     ],
-	"votes": 0
+	"votes": 80
   },
    {
     "name": "Hotel 7",
-	"description": "YOLO 7",
-	"phone":"",
-	"email":"",
+	"description": "Funny or the broken one, I'm the only one that needs saving",
+	"phone":"9876543210",
+	"email":"abc@gmail.com",
     "loc": [
       77.209021,
       28.613939
     ],
-	"votes": 0
+	"votes": 23
   },
    {
     "name": "Hotel 8",
-	"description": "YOLO 8",
-	"phone":"",
-	"email":"",
+	"description": "Facete delenit argumentum cum at. Pro rebum nostrum contentiones ad. Mel exerci tritani maiorum at, mea te audire phaedrum, mel et nibh aliquam. Malis causae equidem vel eu. Noster melius vis ea, duis alterum oporteat ea sea. Per cu vide munere fierent.",
+	"phone":"9876543210",
+	"email":"xyz@yahoo.com",
     "loc": [
       77.22866,
       28.64272
     ],
-	"votes": 0
+	"votes": 11
   },
    {
     "name": "Hotel 9",
-	"description": "YOLO 9",
-	"phone":"",
-	"email":"",
+	"description": "hahahahahahahah; fidelity",
+	"phone":"9876543210",
+	"email":"sansa@hindsight.com",
     "loc": [
       77.219678,
       28.644371
     ],
-	"votes": 0
+	"votes": 68
   },
    {
     "name": "Hotel 10",
-	"description": "YOLO 10",
-	"phone":"",
-	"email":"",
+	"description": "Ad sea dolor accusata consequuntur. Sit facete convenire reprehendunt et. Usu cu nonumy dissentiet, mei choro omnes fuisset ad. Te qui docendi accusam efficiantur, doming noster prodesset eam ei. In vel posse movet, ut convenire referrentur eum, ceteros singulis intellegam eu sit.",
+	"phone":"9876543210",
+	"email":"abc@gmail.com",
     "loc": [
       77.233442,
       28.650679
     ],
-	"votes": 0
+	"votes": 66
   },
    {
     "name": "Hotel 11",
-	"description": "YOLO 11",
-	"phone":"",
-	"email":"",
+	"description": "When the days are dark and full of horrors",
+	"phone":"9876543210",
+	"email":"xyz@yahoo.com",
     "loc": [
       77.241234,
       28.649294
     ],
-	"votes": 0
+	"votes": 9
   },
   {
     "name": "Hotel 12",
-	"description": "YOLO 12",
-	"phone":"",
-	"email":"",
+	"description": "Morbi eget arcu lacinia, placerat ante vestibulum, scelerisque metus. Sed eu ante elementum, ornare mi non, pretium nulla. Ut lacus mauris, elementum quis malesuada in, auctor id magna.",
+	"phone":"9876543210",
+	"email":"sansa@hindsight.com",
     "loc": [
       77.234601,
       28.651621
     ],
-	"votes": 0
+	"votes": 20
   },
   {
     "name": "Hotel 13",
-	"description": "YOLO 13",
-	"phone":"",
-	"email":"",
+	"description": "What is dead may never die",
+	"phone":"9876543210",
+	"email":"abc@gmail.com",
     "loc": [
       77.223371,
       28.51863
     ],
-	"votes": 0
+	"votes": 59
   },
   {
     "name": "Hotel 14",
-	"description": "YOLO 14",
-	"phone":"",
-	"email":"",
+	"description": "Etiam arcu tellus, finibus vel mollis ac, pretium nec enim. Praesent quis felis quis nunc luctus facilisis. Nam id tincidunt felis, eget vulputate libero. Aliquam iaculis viverra enim, quis faucibus purus elementum non. Maecenas interdum justo feugiat libero commodo sagittis. Integer suscipit, orci eget luctus hendrerit, sapien orci pulvinar lacus, at placerat turpis dui a justo.",
+	"phone":"9876543210",
+	"email":"xyz@yahoo.com",
     "loc": [
       77.257217,
       28.526819
     ],
-	"votes": 0
+	"votes": 46
   },
   {
     "name": "Hotel 15",
-	"description": "YOLO 15",
-	"phone":"",
-	"email":"",
+	"description": "Donec convallis sapien ut mauris varius lobortis. Nulla facilisi. Sed interdum enim nisi, id placerat metus pulvinar eget. Aenean at ullamcorper ligula, eu rutrum risus. Duis a velit et dolor finibus auctor.",
+	"phone":"9876543210",
+	"email":"sansa@hindsight.com",
     "loc": [
       77.263863,
       28.577961
     ],
-	"votes": 0
+	"votes": 24
   },
   {
     "name": "Hotel 16",
-	"description": "YOLO 16",
-	"phone":"",
-	"email":"",
+	"description": "Quisque augue velit, aliquam et sapien vel, pharetra fringilla risus. Sed facilisis est nulla, vel ultricies nunc ornare ut. Vestibulum pretium odio a nulla euismod, non hendrerit ligula tempor.",
+	"phone":"9876543210",
+	"email":"abc@gmail.com",
     "loc": [
       77.260562,
       28.59061
     ],
-	"votes": 0
+	"votes": 64
   },
   {
     "name": "Hotel 17",
-	"description": "YOLO 17",
-	"phone":"",
-	"email":"",
+	"description": "Integer eleifend sagittis nisi, non convallis nibh laoreet sed. Pellentesque maximus, enim in accumsan commodo, felis sapien varius lectus, faucibus molestie leo lectus at massa. Pellentesque non eleifend nisl. Integer quis neque id turpis aliquet finibus aliquet nec neque.",
+	"phone":"9876543210",
+	"email":"xyz@yahoo.com",
     "loc": [
       77.265902,
       28.554996
     ],
-	"votes": 0
+	"votes": 33
   },
   {
     "name": "Hotel 18",
-	"description": "YOLO 18",
-	"phone":"",
-	"email":"",
+	"description": "Winter is here",
+	"phone":"9876543210",
+	"email":"sansa@hindsight.com",
     "loc": [
       77.304342,
       28.489972
     ],
-	"votes": 0
+	"votes": 57
   },
   {
     "name": "Hotel 19",
-	"description": "YOLO 19",
-	"phone":"",
-	"email":"",
+	"description": "YOLO",
+	"phone":"9876543210",
+	"email":"abc@gmail.com",
     "loc": [
       77.249595,
       28.548275
     ],
-	"votes": 0
+	"votes": 40
   },
   {
     "name": "Hotel 20",
-	"description": "YOLO 20",
-	"phone":"",
-	"email":"",
+	"description": "That's about it",
+	"phone":"9876543210",
+	"email":"xyz@yahoo.com",
     "loc": [
       77.245335,
       28.562883
     ],
-	"votes": 0
+	"votes": 60
   }
 ]

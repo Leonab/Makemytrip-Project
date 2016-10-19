@@ -99,10 +99,6 @@ angular.module('locationController', ['ui.router','ngMaterial'])
         })
         
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-        .state('about', {
-            url: '/about',
-            templateUrl: 'views/about.html'   
-        })
         .state('search', {
             url: '/search',
             templateUrl: 'views/search.html'   
@@ -122,15 +118,7 @@ angular.module('locationController', ['ui.router','ngMaterial'])
 		.state('differentlyabled', {
             url: '/differentlyabled',
             templateUrl: 'views/display.html'   
-        })
-		.state('contact', {
-            url: '/contact',
-            templateUrl: 'views/contact.html'   
-        })
-		.state('response', {
-            url: '/response',
-            templateUrl: 'views/response.html'  
-		});	
+        })	
 		
 		$locationProvider.html5Mode(true);
         
