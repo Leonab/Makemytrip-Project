@@ -51,6 +51,7 @@ angular.module('d3directive',[])
               .data(data)
               .enter()
                 .append("rect")
+				.on("click", function(d, i){return scope.onClick({item: d});})
                 .attr("height", 0) // height of each bar
                 .attr("width", 30) // initial width of 0 for transition
                 .attr("y", height) // half of the 20 side margin specified above

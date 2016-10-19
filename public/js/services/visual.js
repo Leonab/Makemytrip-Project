@@ -18,9 +18,9 @@ angular.module('d3visual', [])
 				});
 				console.log($scope.d3Data);
       });
-      /*$scope.d3Data = [
-        {name: "Greg", score:98},
-        {name: "Ari", score:96},
-        {name: "Loser", score: 48}
-      ];*/
+	  
+	
+	$scope.d3OnClick = function(item){
+        alert(item.name + " has " + item.votes + " votes");
+    };
     }]);
