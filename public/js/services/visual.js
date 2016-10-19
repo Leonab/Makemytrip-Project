@@ -1,7 +1,7 @@
 angular.module('d3visual', [])
 
 .controller('chartController',['$scope','$http', function($scope,$http){
-      $scope.title = "Yolo";
+      $scope.title = "These are suggestions based on user votes";
 
 	  $scope.d3Data = [];
       $http.get("/api/locations")

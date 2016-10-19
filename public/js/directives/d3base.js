@@ -55,7 +55,7 @@ angular.module('d3directive',[])
                 .attr("width", 30) // initial width of 0 for transition
                 .attr("y", height) // half of the 20 side margin specified above
                 .attr("x", function(d, i){
-                  return i * 50 +22;
+                  return i * 60 +22;
                 }) // height + margin between bars
                 .transition()
                   .duration(1000) // time of duration
@@ -72,7 +72,7 @@ angular.module('d3directive',[])
               .enter()
                 .append("text")
                 .attr("fill", "#000")
-                .attr("x", function(d, i){return i * 50 + 22;})
+                .attr("x", function(d, i){return i * 60 + 22;})
                 .attr("y", height)
                 .text(function(d){return d[scope.label];});
 
