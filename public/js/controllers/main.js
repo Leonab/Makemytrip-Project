@@ -15,10 +15,11 @@ angular.module('locationController', ['ui.router','ngMaterial'])
 	// inject the service factory into our controller
 	.controller('mainController', ['$scope','$http','Locations','$mdToast','$animate', function($scope, $http, Locations, $mdToast, $animate) {
     	
-	
+    $scope.loading = true;
+			
 	$scope.geocode = function() {
 	   // if ($scope.searchLocation != undefined) {
-		    $scope.loading = true;
+
 		
 	    $scope.address = document.getElementById("address").value || "new delhi";
 		console.log($scope.address);
