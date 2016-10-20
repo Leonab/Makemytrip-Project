@@ -25,7 +25,7 @@ angular.module('locationController', ['ui.router','ngMaterial'])
 		console.log($scope.address);
 		Locations.geocoder($scope.address)
 		.success(function(data) {
-			        $scope.loading = false;
+			       
 			        $scope.locations = data;
 					console.log($scope.locations);
 
