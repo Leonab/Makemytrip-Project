@@ -6,13 +6,13 @@
         <md-card-title>
           <md-card-title-text>
             <span class="md-headline">{{location.name}}</span><br>
-            <span class="md-subhead">{{location.description}}</span>
+            <span class="md-subhead"><b>Description: </b>{{location.description}}</span>
           </md-card-title-text>
 
         </md-card-title>
 		<md-card-content>
-          Phone: {{location.phone}}</span><br>
-		  Email: {{location.email}}</span>
+          <b>Phone:</b> {{location.phone}}</span><br>
+		  <b>Email:</b> {{location.email}}</span>
 		  </md-card-content>
         <md-card-actions layout="row" layout-align="end center">
           <md-button ui-sref="differentlyabled" ng-click="destination(location.loc);findid(location._id)">Book</md-button>
