@@ -28,3 +28,12 @@
   <div layout="row" layout-sm="column" layout-align="center center" ng-if="loading" style="min-height:100vh;">
       <md-progress-circular md-mode="indeterminate" class="md-accent" md-diameter="60"></md-progress-circular>
   </div>
+  
+    <div class="md-padding" layout-xs="column" layout="row" ng-if="locations.length==0" class="md-warn">
+    <div flex-xs flex-gt-xs="50" layout="column">
+
+	  <h3> No Results.</h3> 
+	  <h3>Kindly enter a location within Delhi or check for spelling errors</h3>
+		
+	</div>
+  </div>
