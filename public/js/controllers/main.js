@@ -116,8 +116,8 @@ angular.module('locationController', ['ui.router','ngMaterial'])
             url: '/suggestions',
             templateUrl: 'views/d3render.html'   
         })
-		.state('differentlyabled', {
-            url: '/differentlyabled',
+		.state('path', {
+            url: '/path',
             templateUrl: 'views/display.html'   
         })	
 		
