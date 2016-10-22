@@ -1,33 +1,18 @@
 angular.module('locationController', ['ui.router','ngMaterial'])
 
 
-.config(function($mdThemingProvider) {
-
-    $mdThemingProvider.theme('customTheme')
-        .primaryPalette('blue-grey')
-        .accentPalette('blue');
-
-
-})
-
-
-
-	// inject the service factory into our controller
-	.controller('mainController', ['$scope','$http','Locations','$mdToast','$animate', function($scope, $http, Locations, $mdToast, $animate) {
+// inject the service factory into our controller
+.controller('mainController', ['$scope','$http','Locations', function($scope, $http, Locations) {
     	
     $scope.loading = true;
 			
 	$scope.geocode = function() {
-	   // if ($scope.searchLocation != undefined) {
-
 		
 	    $scope.address = document.getElementById("address").value || "new delhi";
-		console.log($scope.address);
 		Locations.geocoder($scope.address)
 		.success(function(data) {
 			       
 			        $scope.locations = data;
-					console.log($scope.locations);
 
 			var longitude =	data.results[0].geometry.location.lng;
 		    var latitude =	data.results[0].geometry.location.lat;
@@ -36,10 +21,8 @@ angular.module('locationController', ['ui.router','ngMaterial'])
 			.success(function(data) {
 			        $scope.loading = false;
 			        $scope.locations = data;
-						console.log(data);
 		        }); 
 		        })
-	//}
 
 	};
 	
@@ -50,7 +33,6 @@ angular.module('locationController', ['ui.router','ngMaterial'])
 		var temp = coords[0];
 		coords[0]=coords[1];
 		coords[1]=temp;
-		console.log(req);
 		$scope.finalAddress = coords;
 	};
 	
@@ -69,7 +51,6 @@ angular.module('locationController', ['ui.router','ngMaterial'])
 			if($scope.locations[i]._id==$scope.id)
 			{
 				$scope.total = $scope.locations[i].votes++;
-				console.log($scope.total);
 				Locations.addVote(JSON.stringify($scope.locations[i]))
 				.success(function(){
 					console.log("success");
@@ -83,12 +64,15 @@ angular.module('locationController', ['ui.router','ngMaterial'])
 	}])
 	
   
-  
-  
 	
 	
-	.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+.config(function($stateProvider, $urlRouterProvider, $locationProvider, $mdThemingProvider) {
     
+	
+	$mdThemingProvider.theme('customTheme')
+    .primaryPalette('blue-grey')
+    .accentPalette('blue');
+		
     $urlRouterProvider.otherwise('/home');
     
     $stateProvider

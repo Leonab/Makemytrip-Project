@@ -23,4 +23,5 @@ angular.module('d3visual', [])
 	$scope.d3OnClick = function(item){
         alert(item.name + " has " + item.votes + " votes");
     };
-    }]);
+	
+}]);

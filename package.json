@@ -1,7 +1,7 @@
 {
   "name": "Hindsight",
   "version": "0.0.1",
-  "description": "Location Biased searching",
+  "description": "Filtering locations based on favorability to differently abled people",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

@@ -2,8 +2,6 @@ var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 var async = require('async');
-//var Location = require('./app/models/location')();
-//var location = mongoose.model('Location');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var fs = require('fs');
@@ -29,5 +27,5 @@ require('./app/routes.js')(app);
 
 
 app.listen(port, function() {
-  console.log("App listening on port 3000");
+  console.log("App listening on port" + port);
 });   

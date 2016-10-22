@@ -29,23 +29,18 @@ app.get('/api/locations', function(req, res) {
 	
 
 app.post('/api/locations2/', function(req, res) {
-
-    console.log("yolo",req.body);
 	
 	//Update the votes in the db via mongoose
     Location.update({_id: req.body._id}, {votes: req.body.votes}, function(err, values) {
         if (!err) {
             res.json(values);
         } else {
-            res.write("fail");
+            res.write("failed");
         }
     });
-
+	
     });	
 	
-
-
-
 
 app.get('/api/query', function(req, res, next){
     
@@ -85,7 +80,7 @@ app.get('/api/query', function(req, res, next){
    
    
  app.get('*', function(req, res) {
-		res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
+		res.sendfile('./public/index.html'); // load the single view file
    });
 };
    

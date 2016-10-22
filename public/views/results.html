@@ -1,37 +1,41 @@
 <div flex layout="row" layout-align="center">
-  <div flex-offset="10" flex="80" class="md-padding">
+   <div flex-offset="10" flex="80" class="md-padding">
   
-  <div ng-repeat="location in locations" id="results">
-  <md-card class="md-padding" md-whiteframe="8">
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">{{location.name}}</span><br>
-            <span class="md-subhead"><b>Description: </b>{{location.description}}</span>
-          </md-card-title-text>
-        </md-card-title>
-		<md-card-content>
-          <b>Phone:</b> {{location.phone}}<br>
-		  <b>Email:</b> {{location.email}}
-		</md-card-content>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button class="md-raised" ui-sref="path" ng-click="destination(location.loc);findid(location._id)">Book</md-button>
-		  <h3>Votes: <b>{{location.votes}}</b></h3>
-        </md-card-actions>
-   </md-card><br>
-  </div>
+      <div ng-repeat="location in locations" id="results">
+         <md-card class="md-padding" md-whiteframe="8">
+            <md-card-title>
+               <md-card-title-text>
+                  <span class="md-headline">{{location.name}}</span><br>
+                  <span class="md-subhead"><b>Description: </b>{{location.description}}</span>
+               </md-card-title-text>
+            </md-card-title>
+		    <md-card-content>
+               <b>Phone:</b> {{location.phone}}<br>
+		       <b>Email:</b> {{location.email}}
+		    </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+               <md-button class="md-raised" ui-sref="path" ng-click="destination(location.loc);findid(location._id)">Book</md-button>
+		       <h3>Votes: <b>{{location.votes}}</b></h3>
+            </md-card-actions>
+         </md-card><br>
+      </div>
   
-  </div>
+   </div>
 </div>
 
-  <div layout="row" layout-sm="column" layout-align="center center" ng-if="loading" style="min-height:100vh;">
-      <md-progress-circular md-mode="indeterminate" class="md-accent" md-diameter="60"></md-progress-circular>
-  </div>
-  
-  <div class="md-padding" layout-xs="column" layout="row" layout-align="center center" ng-if="locations.length==0" class="md-warn" style="min-height:100vh;">
-    <div flex-xs flex-gt-xs="50" layout="column">
+<!--Show loader while results are loaded-->
+<div layout="row" layout-sm="column" layout-align="center center" ng-if="loading" style="min-height:100vh;">
+
+   <md-progress-circular md-mode="indeterminate" class="md-accent" md-diameter="60"></md-progress-circular>
+   
+</div>
+ 
+<!--Show error when location is outside delhi--> 
+<div class="md-padding" layout-xs="column" layout="row" layout-align="center center" ng-if="locations.length==0" class="md-warn" style="min-height:100vh;">
+   <div flex-xs flex-gt-xs="50" layout="column">
 
 	  <div class="md-display-4"> No Results.</div> 
 	  <div class="md-display-2">Kindly enter a location within Delhi or check for spelling errors</div>
 		
-	</div>
-  </div>
+   </div>
+</div>

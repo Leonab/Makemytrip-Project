@@ -1,5 +1,4 @@
 
-
 .inner-border {
     background: #fff;
 	border: 3px solid #ccc;
@@ -12,8 +11,8 @@
 }
 
 .md-display-4, h2 {
-        font-family: 'Tangerine', serif;
-        font-size: 48px;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
 }
 
 #results {
@@ -21,19 +20,18 @@
 }
 
 .btn1 {
-  color : rgb(49, 46, 46);
-  background-color: rgba(255, 222, 121, 0.96);
-  border-radius: 10px 0 0 10px;
-  font-size: 16px;
+    color : rgb(49, 46, 46);
+    background-color: rgba(255, 222, 121, 0.96);
+    border-radius: 10px 0 0 10px;
+    font-size: 16px;
 }
 
 #backg {
-  min-height: 100vh;
-  /*height:auto;*/
-  background-image: url(/images/backg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    min-height: 100vh;
+    background-image: url(/images/backg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h4,h1,h3 { 
