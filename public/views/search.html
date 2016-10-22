@@ -4,16 +4,16 @@
       <div layout="row" layout-sm="column" layout-align="center center" style="min-height:70vh">
          <div flex-gt-sm="80">
 	        <md-input-container>
-              <label>New Delhi</label>
+              <label>Enter a location (within Delhi)</label>
               <input ng-model="searchLocation" type="text" placeholder="new delhi" id="address">
             </md-input-container>
          </div>
          <md-button class="btn1 md-primary md-raised" ui-sref="results" ng-click="geocode()">Search</md-button>
-         <div class="inner-border" ui-sref="suggestions">Suggestions</div>
+         <h3 class="inner-border" ui-sref="suggestions">Suggestions</h3>
       </div>
 
       <div layout="row" layout-align="center center">
-         <h2>Now we don't want to sway you but do look at the suggestions voted by other users.</h2>
+         <h2 style="color:white;">Now we don't want to sway you but do look at the suggestions voted by other users.</h2>
       </div>
    </div>
    
