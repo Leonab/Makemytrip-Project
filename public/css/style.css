@@ -11,7 +11,7 @@
 	cursor: pointer;
 }
 
-.md-display-4 {
+.md-display-4, h2 {
         font-family: 'Tangerine', serif;
         font-size: 48px;
 }
