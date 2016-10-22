@@ -1,12 +1,17 @@
 <div style="min-height:100vh">
-<div layout="column" layout-sm="column" layout-align="center center" style="min-height:70vh">
+<div layout="column">
+<div layout="row" layout-align="center center" style="min-height:70vh">
   <div flex="80">
 	<md-input-container>
       <label>New Delhi</label>
       <input ng-model="searchLocation" type="text" placeholder="new delhi" id="address">
     </md-input-container>
-	<md-button class="btn1 md-primary" ui-sref="results" ng-click="geocode()">Search</md-button>
   </div>
-  <div class="inner-border" ui-sref="suggestions">Suggestions</div>
+  <md-button class="btn1 md-primary md-raised" ui-sref="results" ng-click="geocode()">Search</md-button>
+</div>
+
+<div layout="row">
+  <div class="inner-border md-display-1" ui-sref="suggestions">Suggestions</div>
+</div>
 </div>
 </div>
