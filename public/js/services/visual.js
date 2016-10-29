@@ -16,7 +16,7 @@ angular.module('d3visual', [])
 					$scope.d3Data.push(item);
 					
 				});
-				console.log($scope.d3Data);
+				//console.log($scope.d3Data);
       });
 	  
 	
