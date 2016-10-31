@@ -30,20 +30,17 @@ angular.module('d3directive',[])
 
           // define render function
           scope.render = function(data){
-            // remove all previous items before render
+
             svg.selectAll("*").remove();
 
             // setup variables
             var width, height, max;
             width = d3.select(iElement[0])[0][0].offsetWidth - 20;
-              // 20 is for margins and can be changed
-            height = scope.data.length * 20; 
-              // 35 = 30(bar height) + 5(margin between bars)
-            max = 98;
-              // this can also be found dynamically when the data is not static
-            //max = Math.max.apply(Math, _.map(data, ((val)-> val.count)));
 
-            // set the height based on the calculations above
+            height = scope.data.length * 20; 
+
+            max = 98;
+
             svg.attr('height', height);
 
             //create the rectangles for the bar chart
@@ -53,11 +50,11 @@ angular.module('d3directive',[])
                 .append("rect")
 				.on("click", function(d, i){return scope.onClick({item: d});})
                 .attr("height", 0) // height of each bar
-                .attr("width", 30) // initial width of 0 for transition
-                .attr("y", height) // half of the 20 side margin specified above
+                .attr("width", 30) // initial width for transition
+                .attr("y", height)
                 .attr("x", function(d, i){
                   return i * 60 +22;
-                }) // height + margin between bars
+                })
                 .transition()
                   .duration(1000) // time of duration
                   .attr("y", function(d){
