@@ -15,7 +15,7 @@ mongoose.connect('mongodb://leonab:helloworld@ds057816.mlab.com:57816/hindsight'
 var port= process.env.PORT || 3000;
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
-app.use(bodyParser.urlencoded({'extended':'true'})); // parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({'extended':'true'})); 
 app.use(bodyParser.json());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(express.methodOverride());
